@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BeatLab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎧 BeatLab</h1>
+
+<div class="app">
+
+  <!-- PIANO -->
+  <h2>Piano</h2>
+  <div class="piano">
+    <button class="key" data-note="261.63">C</button>
+    <button class="key" data-note="293.66">D</button>
+    <button class="key" data-note="329.63">E</button>
+    <button class="key" data-note="349.23">F</button>
+    <button class="key" data-note="392.00">G</button>
+    <button class="key" data-note="440.00">A</button>
+    <button class="key" data-note="493.88">B</button>
+  </div>
+
+  <!-- DRUM MACHINE -->
+  <h2>Drum Machine</h2>
+  <div class="drums">
+    <button class="drum" data-sound="kick">Kick</button>
+    <button class="drum" data-sound="snare">Snare</button>
+    <button class="drum" data-sound="hihat">Hi-Hat</button>
+  </div>
+
+  <!-- VOICE RECORDER -->
+  <h2>Voice Recorder</h2>
+  <button id="record">🎤 Record</button>
+  <button id="stop">⏹ Stop</button>
+  <audio id="playback" controls></audio>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
